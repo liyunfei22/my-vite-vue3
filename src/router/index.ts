@@ -3,6 +3,10 @@ const Home = import('@/views/p-home.vue');
 const Abort = import('@/views/p-abort.vue');
 const routes = [
   {
+    path: '/',
+    redirect: '/home',
+  },
+  {
     name: 'home',
     path: '/home',
     component: Home,
