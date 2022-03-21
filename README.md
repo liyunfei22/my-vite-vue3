@@ -11,4 +11,4 @@
 
 [vue-router](https://router.vuejs.org/zh/guide/)
 
-[pinia](https://pinia.vuejs.org/)
+[pinia](https://pinia.vuejs.org/) [example-vue-3-vite](https://stackblitz.com/github/piniajs/example-vue-3-vite?file=src%2Fstores%2Fuser.js)
