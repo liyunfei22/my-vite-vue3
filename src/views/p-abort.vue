@@ -7,18 +7,18 @@
   <button @click="clear">clear</button>
 </template>
 <script setup lang="ts">
-import { useStore } from '@/store/index';
+import { useStore } from '@/store/index'
 
-const store = useStore();
+const store = useStore()
 function add() {
-  store.count++;
+  store.count++
 }
 function change() {
   store.$patch({
     name: 'liyunfei',
-  });
+  })
 }
 function clear() {
-  store.$reset();
+  store.$reset()
 }
 </script>

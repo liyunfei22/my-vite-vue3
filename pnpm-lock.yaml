@@ -5,7 +5,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.15.0
   '@typescript-eslint/parser': ^5.15.0
   '@vitejs/plugin-vue': ^2.2.0
-  D: ^1.0.0
   eslint: ^8.11.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
@@ -22,9 +21,7 @@ specifiers:
   vue-tsc: ^0.29.8
 
 dependencies:
-  D: 1.0.0
   pinia: 2.0.12_typescript@4.6.2+vue@3.2.31
-  sass: 1.49.9
   vue: 3.2.31
   vue-router: 4.0.14_vue@3.2.31
 
@@ -40,6 +37,7 @@ devDependencies:
   husky: 7.0.4
   lint-staged: 12.3.7
   prettier: 2.6.0
+  sass: 1.49.9
   typescript: 4.6.2
   vite: 2.8.6_sass@1.49.9
   vue-tsc: 0.29.8_typescript@4.6.2
@@ -543,14 +541,6 @@ packages:
         integrity: sha512-ymN2pj6zEjiKJZbrf98UM2pfDd6F2H7ksKw7NDt/ZZ1fh5Ei39X5tABugtT03ZRlWd9imccoK0hE8hpjpU7irQ==,
       }
 
-  /D/1.0.0:
-    resolution:
-      {
-        integrity: sha512-nQvrCBu7K2pSSEtIM0EEF03FVjcczCXInMt3moLNFbjlWx6bZrX72uT6/1uAXDbnzGUAx9gTyDiQ+vrFi663oA==,
-      }
-    deprecated: Package no longer supported. Contact support@npmjs.com for more info.
-    dev: false
-
   /acorn-jsx/5.3.2_acorn@8.7.0:
     resolution:
       {
@@ -656,7 +646,7 @@ packages:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
-    dev: false
+    dev: true
 
   /argparse/2.0.1:
     resolution:
@@ -715,7 +705,7 @@ packages:
         integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==,
       }
     engines: { node: '>=8' }
-    dev: false
+    dev: true
 
   /brace-expansion/1.1.11:
     resolution:
@@ -735,6 +725,7 @@ packages:
     engines: { node: '>=8' }
     dependencies:
       fill-range: 7.0.1
+    dev: true
 
   /call-bind/1.0.2:
     resolution:
@@ -787,7 +778,7 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
-    dev: false
+    dev: true
 
   /clean-stack/2.2.0:
     resolution:
@@ -1614,6 +1605,7 @@ packages:
     engines: { node: '>=8' }
     dependencies:
       to-regex-range: 5.0.1
+    dev: true
 
   /flat-cache/3.0.4:
     resolution:
@@ -1645,6 +1637,7 @@ packages:
     engines: { node: ^8.16.0 || ^10.6.0 || >=11.0.0 }
     os: [darwin]
     requiresBuild: true
+    dev: true
     optional: true
 
   /function-bind/1.1.1:
@@ -1685,6 +1678,7 @@ packages:
     engines: { node: '>= 6' }
     dependencies:
       is-glob: 4.0.3
+    dev: true
 
   /glob-parent/6.0.2:
     resolution:
@@ -1813,7 +1807,7 @@ packages:
       {
         integrity: sha512-zIE9hX70qew5qTUjSS7wi1iwj/l7+m54KWU247nhM3v806UdGj1yDndXj+IOYxxtW9zyLI+xqFNZjTuDaLUqFw==,
       }
-    dev: false
+    dev: true
 
   /import-fresh/3.3.0:
     resolution:
@@ -1861,7 +1855,7 @@ packages:
     engines: { node: '>=8' }
     dependencies:
       binary-extensions: 2.2.0
-    dev: false
+    dev: true
 
   /is-core-module/2.8.1:
     resolution:
@@ -1885,6 +1879,7 @@ packages:
   /is-extglob/2.1.1:
     resolution: { integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI= }
     engines: { node: '>=0.10.0' }
+    dev: true
 
   /is-fullwidth-code-point/3.0.0:
     resolution:
@@ -1910,6 +1905,7 @@ packages:
     engines: { node: '>=0.10.0' }
     dependencies:
       is-extglob: 2.1.1
+    dev: true
 
   /is-number/7.0.0:
     resolution:
@@ -1917,6 +1913,7 @@ packages:
         integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==,
       }
     engines: { node: '>=0.12.0' }
+    dev: true
 
   /is-promise/2.2.2:
     resolution:
@@ -2175,6 +2172,7 @@ packages:
         integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==,
       }
     engines: { node: '>=0.10.0' }
+    dev: true
 
   /npm-run-path/4.0.1:
     resolution:
@@ -2289,6 +2287,7 @@ packages:
         integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==,
       }
     engines: { node: '>=8.6' }
+    dev: true
 
   /pidtree/0.5.0:
     resolution:
@@ -2517,7 +2516,7 @@ packages:
     engines: { node: '>=8.10.0' }
     dependencies:
       picomatch: 2.3.1
-    dev: false
+    dev: true
 
   /regexpp/3.2.0:
     resolution:
@@ -2630,7 +2629,7 @@ packages:
       chokidar: 3.5.3
       immutable: 4.0.0
       source-map-js: 1.0.2
-    dev: false
+    dev: true
 
   /semver/7.3.5:
     resolution:
@@ -2847,6 +2846,7 @@ packages:
     engines: { node: '>=8.0' }
     dependencies:
       is-number: 7.0.0
+    dev: true
 
   /token-stream/1.0.0:
     resolution: { integrity: sha1-zCAOqyYT9BZtJ/+a/HylbUnfbrQ= }

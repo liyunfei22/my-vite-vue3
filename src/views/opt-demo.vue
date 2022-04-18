@@ -6,53 +6,57 @@
     name="li"
     age="18"
     class="red"
-    @bClick="handler"
+    @b-click="handler"
   ></ComComponent>
   <button @click="emitChild">子组件方法</button>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
-import ComComponent from '@/components/ComComponent.vue';
+import { defineComponent } from 'vue'
+import ComComponent from '@/components/ComComponent.vue'
+
 export default defineComponent({
   components: {
     ComComponent,
   },
+  provide: {
+    username: 'username',
+  },
   setup(props) {
-    console.log(1, props);
+    console.log(1, props)
   },
   data() {
     return {
       name: 'li',
       count: 1 as number,
-    };
+    }
   },
   computed: {
     double(): number {
-      return this.count * 2;
+      return this.count * 2
     },
     apluse: {
       get(): number {
-        return this.count + 1;
+        return this.count + 1
       },
       set(val) {
-        this.count = val - 1;
+        this.count = val - 1
       },
     },
   },
   expose: ['lala'],
   methods: {
     pluse() {
-      this.count++;
+      this.count++
     },
     handler() {
-      alert('parent');
+      alert('parent')
     },
     lala() {
-      alert('lala');
+      alert('lala')
     },
     emitChild() {
-      console.log(this.$el.handler());
+      console.log(this.$el.handler())
     },
   },
-});
+})
 </script>

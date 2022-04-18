@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 interface props {
-  msg: string;
-  name: string;
+  msg: string
+  name: string
 }
-defineProps<props>();
+defineProps<props>()
 
-const count = ref(0);
+const count = ref(0)
 </script>
 
 <template>

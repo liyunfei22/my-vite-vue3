@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import * as path from 'path';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import * as path from 'path'
 
 export default defineConfig({
   resolve: {
@@ -10,4 +10,4 @@ export default defineConfig({
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'],
   },
   plugins: [vue()],
-});
+})

@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
-const Home = import('@/views/p-home.vue');
-const Abort = import('@/views/p-abort.vue');
-const ComDemo = import('@/views/com-demo.vue');
-const OptDemo = import('@/views/opt-demo.vue');
+import { createRouter, createWebHashHistory } from 'vue-router'
+const Home = import('@/views/p-home.vue')
+const Abort = import('@/views/p-abort.vue')
+const ComDemo = import('@/views/com-demo.vue')
+const OptDemo = import('@/views/opt-demo.vue')
 
 const routes = [
   {
@@ -29,8 +29,8 @@ const routes = [
     path: '/abort',
     component: Abort,
   },
-];
+]
 export default createRouter({
   history: createWebHashHistory(),
   routes,
-});
+})
